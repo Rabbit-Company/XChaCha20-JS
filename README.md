@@ -18,5 +18,5 @@ XChaCha20.encrypt(message, secretKey);
 
 ### 3. Decryption
 ```js
-XChaCha20.decrypt(message, secretKey)
+XChaCha20.decrypt(message, secretKey);
 ```
