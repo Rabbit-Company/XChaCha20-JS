@@ -1,4 +1,8 @@
-// XChaCha20 with Poly1305 Implementation
+/*
+XChaCha20-JS v1.0.1
+https://github.com/Rabbit-Company/XChaCha20-JS
+License: GPL-3.0
+*/
 
 class XChaCha20{
 
@@ -237,6 +241,7 @@ class XChaCha20{
   }
 
   static decrypt(message, secretKey){
+		try { atob(message); } catch { return ""; }
     secretKey = XChaCha20.hexEncode(secretKey);
 
     let d1 = new XChaCha20();
