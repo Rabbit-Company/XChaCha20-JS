@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>XChaCha20-JS</title>
-    <!-- First we import XChaCha20 library -->
-    <script src="XChaCha20.js"></script>
-  </head>
-  <body>
-    <h1><a href="https://github.com/Rabbit-Company/XChaCha20-JS" target="_blank">XChaCha20-JS</a></h1>
-    <textarea id="text-1" rows="10" cols="50"></textarea></br></br>
-    <div class="buttons">
-      <input id="secretKey" type="password" placeholder="Secret Key" />
-      <button class="buttons" id="btn-encrypt">Encrypt</button>
-      <button class="buttons" id="btn-decrypt">Decrypt</button>
-    </div></br>
-    <textarea id="text-2" rows="10" cols="50" readonly></textarea></br>
+	<head>
+		<title>XChaCha20-JS</title>
+		<!-- First we import XChaCha20 library -->
+		<script src="XChaCha20.js"></script>
+	</head>
+	<body>
+		<h1><a href="https://github.com/Rabbit-Company/XChaCha20-JS" target="_blank">XChaCha20-JS</a></h1>
+		<textarea id="text-1" rows="10" cols="50"></textarea></br></br>
+		<div class="buttons">
+			<input id="secretKey" type="password" placeholder="Secret Key" />
+			<button class="buttons" id="btn-encrypt">Encrypt</button>
+			<button class="buttons" id="btn-decrypt">Decrypt</button>
+		</div></br>
+		<textarea id="text-2" rows="10" cols="50" readonly></textarea></br>
 
-    <h1>Performance Test</h1>
-    <div class="buttons">
-      <label>Number of executions:</label>
-      <input id="amount" type="number" min="1" max="100000" placeholder="Amount" value="1000" />
-      <button class="buttons" id="btn-start">Start</button>
-    </div>
-    <p id="perf"></p>
-    <!-- Then we can work with it -->
-    <script src="index.js"></script>
-  </body>
+		<h1>Performance Test</h1>
+		<div class="buttons">
+			<label>Number of executions:</label>
+			<input id="amount" type="number" min="1" max="100000" placeholder="Amount" value="1000" />
+			<button class="buttons" id="btn-start">Start</button>
+		</div>
+		<p id="perf"></p>
+		<!-- Then we can work with it -->
+		<script src="index.js"></script>
+	</body>
 </html>
