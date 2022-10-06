@@ -1,5 +1,5 @@
 /*
-XChaCha20-JS v1.0.1
+XChaCha20-JS v1.0.2
 https://github.com/Rabbit-Company/XChaCha20-JS
 License: GPL-3.0
 */
@@ -184,7 +184,7 @@ class XChaCha20{
 	}
 
 	xchacha20_decrypt(key, encryptedText){
-		this.encryptedText = this.int2(atob(encryptedText));
+		this.encryptedText = this.int2(XChaCha20.b64DecodeUnicode(encryptedText));
 		let nonce = this.encryptedText.slice(-24);
 		this.encryptedText = this.encryptedText.slice(0,-24);
 
@@ -221,6 +221,19 @@ class XChaCha20{
 		return result
 	}
 
+	static b64EncodeUnicode(str) {
+		return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g,
+			function toSolidBytes(match, p1) {
+				return String.fromCharCode('0x' + p1);
+		}));
+	}
+
+	static b64DecodeUnicode(str) {
+		return decodeURIComponent(atob(str).split('').map(function(c) {
+			return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+		}).join(''));
+	}
+
 	static randomNonce(){
 		var rand_n = new Uint8Array(24);
 		crypto.getRandomValues(rand_n);
@@ -235,13 +248,12 @@ class XChaCha20{
 		let e1 = new XChaCha20();
 		e1.xchacha20_encrypt(secretKey, nonce, message);
 		e1.encryptedText.push(...(nonce));
-		e1.encryptedText = btoa(XChaCha20.convertToText(e1.encryptedText));
+		e1.encryptedText = XChaCha20.b64EncodeUnicode(XChaCha20.convertToText(e1.encryptedText));
 
 		return e1.encryptedText;
 	}
 
 	static decrypt(message, secretKey){
-		try { atob(message); } catch { return ""; }
 		secretKey = XChaCha20.hexEncode(secretKey);
 
 		let d1 = new XChaCha20();
