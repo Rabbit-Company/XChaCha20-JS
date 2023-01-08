@@ -1,7 +1,7 @@
 /*
-XChaCha20-JS v1.0.2
+XChaCha20-JS v1.0.3
 https://github.com/Rabbit-Company/XChaCha20-JS
-License: GPL-3.0
+License: MIT
 */
 
 class XChaCha20{
