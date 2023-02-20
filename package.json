@@ -1,0 +1,23 @@
+{
+  "name": "xchacha20-js",
+  "version": "1.0.3",
+  "description": "XChaCha20 implementation in a plain JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rabbit-Company/XChaCha20-JS.git"
+  },
+  "keywords": [
+    "pure-javascript",
+    "xchacha20"
+  ],
+  "author": "Rabbit-Company",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rabbit-Company/XChaCha20-JS/issues"
+  },
+  "homepage": "https://github.com/Rabbit-Company/XChaCha20-JS#readme"
+}
