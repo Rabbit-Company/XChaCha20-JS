@@ -1,10 +1,4 @@
-/*
-XChaCha20-JS v1.0.3
-https://github.com/Rabbit-Company/XChaCha20-JS
-License: MIT
-*/
-
-class XChaCha20{
+export default class XChaCha20{
 
 	constructor(){
 		this.keystream = NaN;

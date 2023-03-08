@@ -1,0 +1,39 @@
+{
+	"name": "@rabbit-company/xchacha20",
+	"version": "1.1.0",
+	"description": "XChaCha20 encryption",
+	"main": "./src/xchacha20.js",
+	"type": "module",
+	"homepage": "https://github.com/Rabbit-Company/XChaCha20-JS",
+	"funding": "https://rabbit-company.com/donation",
+	"author": "Rabbit Company <info@rabbit-company.com>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"build": "rabbit-builder"
+	},
+	"files": [
+		"src/xchacha20.js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Rabbit-Company/XChaCha20-JS.git"
+	},
+	"contributors": [
+		"Rabbit Company <info@rabbit-company.com> (https://github.com/Rabbit-Company)"
+	],
+	"bugs": {
+		"url": "https://github.com/Rabbit-Company/XChaCha20-JS/issues",
+		"email": "info@rabbit-company.com"
+	},
+	"keywords": [
+		"xchacha20",
+		"password",
+		"encryption",
+		"decryption",
+		"security"
+	],
+	"devDependencies": {
+		"@rabbit-company/rabbit-builder": "^1.0.4"
+	}
+}

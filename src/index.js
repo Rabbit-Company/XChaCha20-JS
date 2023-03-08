@@ -1,3 +1,5 @@
+import XChaCha20 from "./xchacha20.js";
+
 // Encrypt text
 document.getElementById("btn-encrypt").addEventListener('click', () => {
 	let textPlan = document.getElementById("text-1").value;
