@@ -1,6 +1,6 @@
 {
 	"name": "@rabbit-company/xchacha20",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"description": "XChaCha20 encryption",
 	"main": "./module/xchacha20.js",
 	"browser": "./module/xchacha20.js",
