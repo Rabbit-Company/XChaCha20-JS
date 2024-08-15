@@ -1,8 +1,9 @@
 {
 	"name": "@rabbit-company/xchacha20",
-	"version": "1.1.0",
+	"version": "2.1.0",
 	"description": "XChaCha20 encryption",
-	"main": "./src/xchacha20.js",
+	"main": "./module/xchacha20.js",
+	"browser": "./module/xchacha20.js",
 	"type": "module",
 	"homepage": "https://github.com/Rabbit-Company/XChaCha20-JS",
 	"funding": "https://rabbit-company.com/donation",
@@ -10,10 +11,11 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
-		"build": "rabbit-builder"
+		"build": "bun run build.ts"
 	},
 	"files": [
-		"src/xchacha20.js"
+		"module/xchacha20.js",
+		"module/xchacha20.d.ts"
 	],
 	"repository": {
 		"type": "git",
@@ -34,6 +36,11 @@
 		"security"
 	],
 	"devDependencies": {
-		"@rabbit-company/rabbit-builder": "^1.0.4"
+		"@types/bun": "latest",
+		"bun-plugin-dts": "^0.2.3",
+		"@rabbit-company/logger": "^4.0.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
 	}
 }
