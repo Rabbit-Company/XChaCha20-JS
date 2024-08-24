@@ -1,6 +1,6 @@
 {
 	"name": "@rabbit-company/xchacha20",
-	"version": "2.2.0",
+	"version": "2.2.1",
 	"description": "XChaCha20 encryption",
 	"main": "./module/xchacha20.js",
 	"browser": "./module/xchacha20.js",
@@ -36,11 +36,11 @@
 		"security"
 	],
 	"devDependencies": {
-		"@types/bun": "latest",
+		"@types/bun": "^1.1.7",
 		"bun-plugin-dts": "^0.2.3",
 		"@rabbit-company/logger": "^4.0.0"
 	},
 	"peerDependencies": {
-		"typescript": "^5.0.0"
+		"typescript": "^5.5.4"
 	}
 }
