@@ -1,6 +1,6 @@
 {
 	"name": "@rabbit-company/xchacha20",
-	"version": "2.2.1",
+	"version": "2.3.0",
 	"exports": "./src/xchacha20.ts",
 	"publish": {
 		"include": ["LICENSE", "README.md", "src/xchacha20.ts"]

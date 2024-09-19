@@ -199,7 +199,7 @@ class XChaCha20 {
   }
   static randomNonce() {
     let rand_n = new Uint8Array(24);
-    crypto.getRandomValues(rand_n);
+    globalThis.crypto.getRandomValues(rand_n);
     return rand_n;
   }
   static encrypt(message, secretKey) {
